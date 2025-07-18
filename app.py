@@ -9,6 +9,7 @@ def embed(text):
     embedding = model.encode(text)
     return embedding.tolist()
 
+# api w/ gradio
 api = gr.Interface(
     fn=embed,
     inputs=gr.Textbox(label="Enter Text"),

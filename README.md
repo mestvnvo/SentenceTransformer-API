@@ -2,7 +2,7 @@
 title: SentenceTransformer API
 emoji: 🚀
 colorFrom: blue
-colorTo: indigo
+colorTo: blue
 sdk: gradio
 sdk_version: 5.38.0
 app_file: app.py
