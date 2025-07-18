@@ -4,8 +4,8 @@ from sentence_transformers import SentenceTransformer
 model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
 
 def embed(text):
-    if not text.strip():
-        return "No text provided."
+    if not text or not text.strip():
+        raise gr.Error("No text provided.")
     embedding = model.encode(text)
     return embedding.tolist()
 
